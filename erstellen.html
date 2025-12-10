@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anzeige erstellen</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="erstellen.css">
+</head>
+<script src="erstellen.js"></script>
+<body>
+    <header>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%; text-align: left;"
+                    onclick="location.href='file:///C:/Users/locka/DHBW/Kleinanzeigen/uebersicht.html'"><img
+                        src="C:\Users\locka\OneDrive\Bilder\Screenshots\Screenshot 2025-11-19 160414.png"
+                        alt="Kleinanzeigen" class="logo"></td>
+                <td style="width: 50%; height: 40px"></td>
+
+            <tr style="background-color: #b5e941; height: 70px">
+                <td colspan="2"></td>
+            </tr>
+        </table>
+    </header>
+
+    <main>
+        <div class="seite">
+                <!-- Formular Anfang -->
+    <form id="adForm">
+            <!-- Außentabelle mit 3 Spalten -->
+            <table class="outerTable">
+                <tr>
+                    <!-- linke graue Spalte -->
+                    <td class="sideCol"></td>
+
+                    <!-- mittlere Spalte mit Formular -->
+                    <td class="centerCol">
+                        <table class="formTable">
+                            <!-- Überschrift als Tabellenzeile -->
+                            <tr>
+                                <td colspan="2">
+                                    <h1>Anzeige erstellen</h1>
+                                </td>
+                            </tr>
+
+                            <!-- Gebot / Gesuch -->
+                            <tr>
+                                <td class="fett">Gebot / Gesuch</td>
+                                <td>
+                                    <label>
+                                        <input type="radio" name="anzeigeArt" value="biete" checked> <!--Anzeigefelder sollen geändert werden je nach Auswahl-->
+
+                                        Ich biete
+                                    </label>
+                                    <label style="margin-left: 20px;">
+                                        <input type="radio" name="anzeigeArt" value="suche">
+                                        Ich suche
+                                    </label>
+                                </td>
+                            </tr>
+
+                            <!-- Titel -->
+                            <tr>
+                                <td class="fett">
+                                    <label for="title">Titel</label>
+                                </td>
+                                <td>
+                                    <input id="title" type="text" placeholder="Titel" minlength="10" required class="form-control">
+                                    <div class="kleinertext">
+                                        Gib hier deinen Titel ein (mindestens 10 Zeichen)
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Kategorie -->
+                            <tr>
+                                <td class="fett">
+                                    <label for="category">Kategorie</label>
+                                </td>
+                                <td>
+                                    <select id="category">
+                                        <option value="" selected></option>
+
+                                        <optgroup label="Kategorie">
+                                            <option>Auto, Rad & Boot</option>
+                                            <option>Dienstleistungen</option>
+                                            <option>Eintrittskarten & Tickets</option>
+                                            <option>Elektronik</option>
+                                            <option>Familie, Kind & Baby</option>
+                                            <option>Freizeit, Hobby & Nachbarschaft</option>
+                                            <option>Haus & Garten</option>
+                                            <option>Haustiere</option>
+                                            <option>Immobilien</option>
+                                            <option>Jobs</option>
+                                            <option>Mode & Beauty</option>
+                                            <option>Musik, Filme & Bücher</option>
+                                            <option>Nachbarschaftshilfe</option>
+                                            <option>Unterricht & Kurse</option>
+                                            <option>Verschenken & Tauschen</option>
+                                        </optgroup>
+
+                                        <!--Kategorien Überarbeiten!-->
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Preis -->
+                            <tr>
+                                <td class="fett">
+                                    <label for="price">Preis</label>
+                                </td>
+                                <td>
+                                    <input id="price" type="number" placeholder="Preis" required class="form-control">
+                                </td>
+                            </tr>
+
+                            <!-- Preistyp -->
+                            <tr>
+                                <td class="fett">
+                                    <label for="Preistyp">Preistyp</label>
+                                </td>
+                                <td>
+                                    <select id="Preistyp">
+                                        <option value="" selected></option> <!--Dropdown Menü machen-->
+                                        <option>Zu verschenken</option>
+                                        <option>Verhandlungsbasis</option>
+                                        <option>Festpreis</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Beschreibung -->
+                            <tr>
+                                <td class="fett">
+                                    <label for="description">Beschreibung</label>
+                                </td>
+                                <td>
+                                    <textarea id="description" maxlength="4000" minlength="10"
+                                        placeholder="Beschreibung" class="form-control"></textarea>
+                                    <div class="kleinertext">
+                                        Du hast noch 4000 Zeichen übrig. <!--soll heruntergezählt werden-->
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Bilder -->
+                            <tr>
+                                <td class="fett">
+                                    <label for="images">Bilder</label> <!--Bildervorschau rein-->
+                                </td>
+                                <td>
+                                    <input id="images" type="file" accept="image/*" multiple class="form-control">
+                                </td>
+                            </tr>
+
+                            <!-- Button -->
+                            <tr>
+                                <td class="fett"></td>
+                                <td>
+                                    <button type="submit" class="btn btn-success">Anzeige aufgeben</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                    <!-- rechte graue Spalte -->
+                    <td class="sideCol"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="erstellen.js"></script>
+</body>
+
+</html>

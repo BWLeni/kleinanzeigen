@@ -1,0 +1,99 @@
+body {
+    background-color: white;
+    font-family: "Segoe UI";
+    margin: 0;
+}
+
+/* zentraler Bereich*/
+.seite {
+    margin: 20px auto 40px auto;
+    max-width: 1100px;
+}
+
+/* Außentabelle mit drei Spalten */
+.outerTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* innere linke & rechte graue Spalte */
+.sideCol {
+    width: 150px;
+    background-color: #f4f2ef;
+}
+
+/* innere mittlere Spalte */
+.centerCol {
+    background-color: #f4f2ef;
+    padding: 20px 30px; /*Abstand*/
+}
+
+/* innere Formular-Tabelle */
+.formTable {
+    width: 100%; /*Volle Breite von .seite*/
+    border-collapse: collapse;
+} 
+
+/* Durchgezogene Zeile */
+.formTable tr {
+    border-bottom: 1px solid #e0dedb;
+}
+
+.formTable td {
+    padding: 10px 8px;
+    vertical-align: top;
+}
+
+/* linke Spalte der inneren Tabelle */
+.fett {
+    width: 160px;
+    font-weight: 500;
+}
+
+/* Eingabefelder */
+.formTable input[type="text"],
+.formTable input[type="number"],
+.formTable select,
+.formTable textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: "Segoe UI";
+    font-size: 14px;
+}
+
+.formTable textarea {
+    min-height: 120px;
+}
+
+/* kleine Hinweise */
+.kleinertext {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+/* Radio-Buttons grün */
+input[type="radio"] {
+    accent-color: #3b7a2a;
+} 
+
+/* Button */
+.btn {
+    padding: 8px 16px;
+    border-radius: 6px; /*abrunden*/
+    border: none;
+    background-color: #3b7a2a;
+    color: white;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #2f6320;
+}
+
+.logo {
+    height: 40px;
+}

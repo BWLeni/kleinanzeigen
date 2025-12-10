@@ -1,0 +1,23 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: #b5e941;
+}
+
+p {
+    color: black;
+}
+
+body {
+    font-family: "Segoe UI";
+}
+
+header {
+    width: 100%;
+}
+
+.logo {
+    height: 40px;
+}
